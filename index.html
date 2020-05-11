@@ -48,6 +48,26 @@
         src="sarah-video.mp4">
       </video>
 
+      <img id="olivia-thumb" src="targets/olivia-target.jpg">
+      <video
+        id="olivia-video"
+        autoplay
+        muted
+        crossorigin="anonymous"
+        loop="true"
+        src="olivia-video.mp4">
+      </video>
+
+      <img id="cat-thumb" src="targets/cat-target.jpg">
+      <video
+        id="cat-video"
+        autoplay
+        muted
+        crossorigin="anonymous"
+        loop="true"
+        src="cat-video.mp4">
+      </video>
+
     </a-assets>
 
     <a-camera
@@ -73,6 +93,20 @@
       xrextras-play-video="video: #sarah-video; thumb: #sarah-thumb; canstop: true"
       geometry="primitive: plane; height: 1; width: 1.80;">
     </a-entity>
+
+      <!-- Note: "name:" must be set to the name of the image target uploaded to the 8th Wall Console -->
+      <a-entity
+        xrextras-named-image-target="name: olivia-target"
+        xrextras-play-video="video: #olivia-video; thumb: #olivia-thumb; canstop: true"
+        geometry="primitive: plane; height: 1; width: 1.80;">
+      </a-entity>
+
+      <!-- Note: "name:" must be set to the name of the image target uploaded to the 8th Wall Console -->
+      <a-entity
+        xrextras-named-image-target="name: cat-target"
+        xrextras-play-video="video: #cat-video; thumb: #cat-thumb; canstop: true"
+        geometry="primitive: plane; height: 1; width: 1.80;">
+      </a-entity>
 
     <!-- Note: "name:" must be set to the name of the image target uploaded to the 8th Wall Console -->
     <a-entity xrextras-named-image-target="name: model-target">
